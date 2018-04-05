@@ -17,18 +17,43 @@ app.mainPage=(()=>{
 	var $wrapper,context,view,image;
 	var onCreate=()=>{
 		 $wrapper = $('#wrapper');
+		 $content = $('#content');
 		 context = $.context();
 		 image = $.image();
 	     view = $.javascript()+'/view.js';
 	     setContentView();
+	     content();
 	 };
 	 var setContentView=()=>{
 		 $.getScript(view,()=>{
-    		 $(createHTag({
-    			 num : '1',
-    			 val : 'Hello'
+    		 $(createDiv({
+    			 id : 'wrap-tnb-menu',
+    			 clazz : 'wrap-tnb-menu'
     		 })).appendTo($wrapper);
+    		 $(createDiv({
+    			 id : 'tnb-menu-text-right',
+    			 clazz : 'tnb-menu text-right'
+    		 })).appendTo('#wrap-tnb-menu');
+    		 $(createATag({
+    			 id : 'a-login',
+    			 clazz : 'tnb-link',
+    			 txt : '로그인'
+    		 })).appendTo('#tnb-menu-text-right');
+    		 $(createSpan({
+    			 id : 'span-login',
+    			 clazz : 'division',
+    		 })).appendTo('#tnb-menu-text-right');
+    		 $(createATag({
+    			 id : 'a-join',
+    			 clazz : 'tnb-link last',
+    			 txt : '회원가입'
+    		 })).appendTo('#tnb-menu-text-right');
          });
 	 };
-	 return{onCreate:onCreate}
+	 var content=()=>{
+		 $.getScript(view,()=>{
+			 $(doo()).appendTo($content);
+		 });
+	 };
+	 return{onCreate:onCreate,content:content}
 })();

@@ -13,10 +13,10 @@
 <div class="header">
     <div class="wrap-tnb-menu">
         <div class="tnb-menu text-right">
-                        <a class="tnb-link" href="#login" data-target="#login">로그인</a>
-            <span class="division"></span>
+            <a class="tnb-link" href="#login" data-target="#login">로그인</a>
+            	<span class="division"></span>
             <a class="tnb-link last" href="#join" data-target="#join">회원가입</a>
-                    </div>
+        </div>
     </div>
     <div class="wrap-gnb-menu">
         <div class="gnb-menu clearfix">
@@ -112,7 +112,8 @@
     </form>
 </div>
 <!-- content -->
-<div id="content"><div class="bookk-store">
+<div id="content">
+<div class="bookk-store">
     <div class="category-wrap">
         <div class="container">
             <div class="store-gnb">

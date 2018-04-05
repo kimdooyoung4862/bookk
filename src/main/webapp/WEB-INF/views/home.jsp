@@ -7,11 +7,13 @@
 	<script src="${context}/resources/js/app.js"></script>
 	<script src="${context}/resources/js/view.js"></script>
 	<script src="${context}/resources/js/router.js"></script>
-	<%-- <link rel="stylesheet" href="${a}/resources/css/NewFile.css" /> --%>
+	<link rel="stylesheet" href="${context}/resources/css/NewFile.css" />
     <title>부크크</title>
 </head>
 <body>
-<div id="wrapper">	
+<div id="wrapper" class="header">	
+</div>
+<div id="content" class="content">
 </div>
 </body>
 </html>
